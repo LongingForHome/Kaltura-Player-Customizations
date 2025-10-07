@@ -11,12 +11,12 @@ There are **two main ways** to apply translation overrides:
 1. **Static config via Player Studio (KMC)**  
    Go to **Player Studio → Player Settings → Advanced Settings**.  
    In the JSON editor, locate the `config -> ui` section — this is where you’ll add translation overrides.  
-   ![Player Studio Advanced Settings Screenshot](/resources/player-studio.png)  
-   ![Advanced Settings JSON Screenshot](/resources/player-studio-advanced.png)
+   ![Player Studio Advanced Settings Screenshot](resources/player-studio.png)  
+   ![Advanced Settings JSON Screenshot](resources/player-studio-advanced.png)
 
 2. **Dynamic config via Embed Setup**  
    Add the `ui` element with your translation overrides to the JSON passed into `KalturaPlayer.setup()`.  
-   ![Embed Setup JSON Screenshot](/resources/player-embedCode-setup.png)
+   ![Embed Setup JSON Screenshot](resources/player-embedCode-setup.png)
 
 ---
 
@@ -34,7 +34,7 @@ Translation keys follow this structure:
 `language → component/plugin → text_key: "translation"`  
 
 For example, suppose you want to change **“Advanced captions settings”** to **“Customize captions display”**:  
-![Advanced Captions Settings Screenshot](/resources/player-advancedCaptionsSettings.png)
+![Advanced Captions Settings Screenshot](resources/player-advancedCaptionsSettings.png)
 
 You’ll find this text under both the `captions` and `cvaa` components — so we’ll override both for consistency.
 
@@ -43,7 +43,7 @@ You’ll find this text under both the `captions` and `cvaa` components — so w
 ### 1. Static Config in Player Studio
 
 Add the nested translation JSON in the `ui.translations` section of your player’s **Advanced Settings**:  
-![Static JSON Override Screenshot](/resources/player-studio-advanced-translations-customizeCaptionsDisplay-withModal.png)
+![Static JSON Override Screenshot](resources/player-studio-advanced-translations-customizeCaptionsDisplay-withModal.png)
 
 ---
 
@@ -82,7 +82,7 @@ You can also define the same overrides when embedding the player:
 </script>
 ```
 
-![Embed Code Override Screenshot](/resources/player-embedCode-setup-translations-customizeCaptionsDisplay-withModal.png)
+![Embed Code Override Screenshot](resources/player-embedCode-setup-translations-customizeCaptionsDisplay-withModal.png)
 
 > ⚠️ **Note:** These examples use English (`"en"`). For multilingual players, add equivalent overrides for each supported language.
 
